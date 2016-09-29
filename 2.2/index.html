@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<link rel="stylesheet" type="text/css" href="../2.1/style.css">
+<meta charset="UTF-8">
+<title>Text och listor</title>
+</head>
+<body>
+<header>
+	<h1>Text och listor</h1>
+</header>
+<article>
+		<h2>Fontfamiljer</h2>
+		<div class="beskrivning">
+			<p>Font-family egenskapen specificerar fonten som ska användas i ett element på sidan.</p>
+			<p>Font-family egenskapen kan hålla flera olika fonter som fungerar som ett "fallback" system ifall webbläsaren inte skulle kunna hantera en viss font.</p>
+			<p>För att ändra storlek på texten kan man använda sig av två primära enheter. nyckelord(<code>xx-small</code>, <code>x-small</code>, <code>small</code>, <code>medium</code>, <code>large</code>, <code>x-large</code> och <code>xx-large</code>) eller värden(<code>%</code> och <code>em</code>.</p>
+			<h4>Nyckelord</h4>
+			<p>Nycklord sätter fontstorleken till ett fastväde som är definerat av webbläsaren som finns på användarens dator.</p>
+			<h4>Värden</h4>
+			<p>Värde är ett relativt värde som sätter fontens storlek utifrån det fontstorleken som är satt i förälder-elementet.</p>
+			<p><code>&lt;head&gt;</code>-tag</p>
+		</div>
+	</article>
+	
+	<article>
+		<h2>Color</h2>
+		<div class="beskrivning">
+			<p>Egenskapen color bestämmer vilken färg en font ska ha. Man kan välja att använda sig av egna färger eller fördefinerade systemfärger.</p>
+			<p>Egna färger anger man genom att sätta ett värde med en så kallad "hexadecimal".</p>
+			<p>Fördefinerade systemfärger är färger som redan finns inlagda i HTML och det skrivs med klar text så som, <code>red</code>, <code>green</code>, <code>black</code> och så vidare. Se exempel nedan.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><strong><code>
+			p {
+				color:red;
+			}
+
+			ul li { 
+				color: #111;
+			}
+		</code></strong></p>
+		</div>
+	</article>
+
+		<article>
+		<h2>Teckensnitt</h2>
+		<div class="beskrivning">
+			<p>Enheten <code>font</code> sätter alla font egenenskaper i en deklaration. De egenskaper som kan sättas i en <code>font</code> deklaration är följande <code>font-style</code> <code>font-variant</code> <code>font-weight</code> <code>font-size/line-height</code> <code>font-family</code></p>
+			<p>De obligatoriska värdena i <code>font</code> enheten är <code>font-family</code> samt <code>font-size</code>. Om en av de andra värdena saknas så sätts de standardvärde som finns.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><strong><code>
+			p {
+				font: italic bold 12px/30px Georgia, serif;
+			}
+		</code></strong></p>
+		</div>
+	</article>
+
+	<article>
+		<h2>Listor</h2>
+		<div class="beskrivning">
+			<p>Egenskapen <code>list-style</code> är en egenskap som sätter alla egenskaper list deklarationer i en och samma deklaration.</p>
+			<p>De egenskaper som kan sättas i <code>list-style</code> är följande <code>list-style-type</code> <code>list-style-position</code> <code>list-style-image</code></p>
+			<p>Ifall något värde saknas i <code>list-style</code> så kommer det ett default värde sättas, om det finns ett.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><strong><code>
+			p {
+				list-style: square inside;
+			}
+		</code></strong></p>
+		</div>
+	</article>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="script.js"></script>
+
+
+<meta charset="UTF-8">
+
+<title>Webbläsar-objekt</title>
+</head>
+<body>
+<div id="container">
+<h1>Webbläsar-objekt</h1>
+
+<div id="alertBoxTrigger"></div>
+<button onclick="alertFunction()" id="alertButton">Aktivera alert box</button>
+<button onclick="confirmFunction()" id="confirmButton">Aktivera confirm box</button>
+<button onclick="promptFunction()" id="promptButton">Aktivera prompt box</button>
+
+<br>
+<br>
+<button onclick="openFunction()" id="openButton">Öppna ett nytt fönster</button>
+<button onclick="closeFunction()" id="closeButton">Stäng fönster</button>
+
+<p>Ett nytt objekt kommer läggas till i listan varje sekund.</p>
+<p>Med hjälp av nedan knappar kan du starta och stoppa listan.</p>
+<button onclick="startListFunction()" id="startList">Starta lista</button>
+<button onclick="stopListFunction()" id="stopList">Stoppa lista</button>
+<ul id="appendingList">
+	
+</ul>
+
+<p>Om du klickar på nedan knapp så kommer en alert box komma upp efter 5 sekunder.</p>
+<button onclick="timeoutFunction()" id="timeoutButton">Visa alertbox efter 5 sek</button>
+<p>För att stoppa alert box från att visas efter 5 sek så kan ni klicka på nedan knapp</p>
+<button onclick="clearTimeoutFunction()" id="clearTimeoutButton">Stoppa alertbox</button>
+
+<footer><h4>Skapad av Erik Boström 2016</h4></footer>
+</div>
+</body>
+
+</html>

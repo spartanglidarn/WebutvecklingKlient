@@ -1,0 +1,37 @@
+#container {
+	width: 960px;
+	border: 1px solid black;
+}
+
+#gameArea {
+	width: 90%;
+	margin: 0 20px;
+	border: 1px solid black;
+}
+
+h1 {
+	text-align: center;
+}
+
+.clearLine {
+	clear: both;
+}
+
+.rpsImg {
+	margin: 20px 40px;
+}
+
+.result {
+	border: 1px solid black;
+
+}
+
+#gameResult {
+	float: left;
+	margin:20px 40px;
+}
+
+#opponentResult {
+	float: right;
+	margin: 20px 40px;
+}

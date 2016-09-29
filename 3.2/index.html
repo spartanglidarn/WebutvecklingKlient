@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="script.js"></script>
+
+<meta charset="UTF-8">
+
+<title>JS, Jquery och DOM</title>
+</head>
+
+<body>
+<div id="container">
+
+	<h1>JS, Jquery och DOM</h1>
+	<div id="mainArea">
+		<p id="firstP">Första test paragrafen!!!</p>
+		<p>Andra test paragrafen!!!</p>
+		<button id="box1Button">Klicka på mig för att ta bort den första pragrafen</button>
+		<br>
+		<div id="box1"></div>
+		<p id="box1Text">Denna text tillhör box1</p>
+		<button id="box2Button">Klicka på mig för att flytta box2</button>
+		<div id="box2"></div>
+		<button id="pColor">Ändra färg på paragrafer</button>
+		<br><br>
+
+		<input type="text" id="inputText" name="inputText">
+		<button id="inputTextButton">Visa texten nedan</button><br>
+
+		<p id="showInputText">Här visas texten du skriver in i fältet ovan.</p>
+		<button id="inputListButton">lägg till objekt i listan</button>
+		<button id="outputListButton">ta bort objekt från listan</button>
+		<ol id="appendList">
+		</ol>
+
+		<p id="klassParagraf">Detta är texten i en paragraf. med hjälp av knapparna nedan kan man lägga till och ta bort klasser på denna pragraf.</p>
+		<button id="addClass">lägg till klasser</button>
+		<button id="removeClass">ta bort klasser</button><br>
+		<br>
+		<form id="formForm">
+			<input type="text" name="formText" id="formText">
+			<input type="submit" name="formSubmit" id="formSubmit">
+		</form>
+		<p>Markera nedan textfält och klicka på valfri knapp på tangentbordet för att ändra storlek på den gula lådan</p>
+		<input type="text" name="box3Input" id="box3Input">
+		<div id="box3"></div>
+
+		<a id="preventLink" href="http://google.com">Detta är en länk till google som stoppas av JQuery's "preventDefault()".</a>
+
+		<p id="paragrafOff">Denna paragraf går inte att klicka på till skillnad från alla andra som kommer visa en alert box ifall man klickar på dem</p>
+
+	</div>
+
+	<footer><h4>Skapad av Erik Boström 2016</h4></footer>
+</div>
+</body>
+</html>

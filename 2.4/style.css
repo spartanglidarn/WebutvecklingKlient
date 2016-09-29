@@ -1,0 +1,25 @@
+body {
+	background: white url("bgPic.PNG") no-repeat fixed right bottom;
+}
+
+h1 {
+	background: url("bgPic2.PNG") no-repeat fixed left top;
+	background-size: 100px 100px;
+}
+
+li {
+	background-image: url(bgPic3.PNG);
+	background-position: left top;
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+}
+
+#imgCss img {
+	margin: 0 20px 10px 10px;
+	float: left;
+	
+}
+
+#imgCss h3{
+	clear:left;
+}

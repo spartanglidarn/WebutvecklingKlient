@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<link rel="stylesheet" type="text/css" href="../2.1/style.css">
+<link rel="stylesheet" type="text/css" href="23.css">
+<meta charset="UTF-8">
+<title>Marginaler, kantlinjer och paddning</title>
+</head>
+<body>
+<header>
+	<h1>Marginaler, kantlinjer och paddning</h1>
+</header>
+
+	<article>
+		<h2>Boxmodell</h2>
+		<div class="beskrivning">
+			<p>Man kan se alla HTML element i ett dokument som lådor. I CSS när man pratar om Boxmodellen så talar man om design och layout.</p>
+			<p>Boxmodellen i CSS är i grund och botten en som man lägger ett HTML element i. Lådan består av <code>margin</code>(ger ett avstånd utanför lådan som är genomskinligt), <code>border</code>(en kant som går runt innehållet och padding delen), <code>padding</code>(ger ett avstånd runt innehållet i lådan som är genomskinligt) och det faktiska innehållet i elementet.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div {
+   				width: 300px;
+   				border: 25px solid green;
+    			padding: 25px;
+    			margin: 25px;
+}
+		</code></p>
+		</div>
+	</article>
+
+	<article>
+		<h2>Margin</h2>
+		<div class="beskrivning">
+			<p>Egenskapen <code>margin</code> sätter alla de <code>margin</code> egenskaper som finns i en deklaration. Så istället för att sätta fyra olika för varje sida av lådan så sätter man istället alla fyra värden i en och samma egenskap.</p>
+			<p>Om man ger egenskapen endast ett värde så blir det samma margin på alla fyra sidor. Om man ger egenskapen två eller tre värden så får de sidor utan värde ett värde av sin motsatta sida, till exempel om man skriver <code>margin: 10px 5px;</code> så kommer övre och undre sidan få 10px medans höger och vänster får 5px.</p>
+			<p>I nedan exempel så är blir <code>margin-top</code> 10px, <code>margin-right</code> 5px, <code>margin-bottom</code> 15px och <code>margin-left</code> 20px.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div {
+				margin:10px 5px 15px 20px;
+			}
+		</code></p>
+		</div>
+	</article>
+
+	<article id="borderBeskrivning">
+		<h2>Border-color</h2>
+		<div class="beskrivning" >
+			<p>Egenskapen <code>border-color</code> sätter en förg på den kant som går runt lådan. Egenskapen sätter färgen på alla fyra sidor av lådan och färgen kan anges i antingen fördefinerade systemfärger eller i hexadecimaler.</p>
+			<p>Om man vill ange färg för en specifik sida av lådan så kan man använda sig av egenskaperna <code>border-top-color</code>, <code>border-right-color</code>, <code>border-bottom-color</code> eller <code>border-left-color</code>.</p>
+			<p>Det går även att sätta olika färger på olika sidor av lådan genom att ange flera värden i egenskapen <code>border-color</code>. Exemplet nedan visar till exempel på att vi har sätt varje sida av lådan till olika färg så som denna artikels kanter ser ut.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div  {
+				border-color: red green blue pink;
+			}
+		</code></p>
+		</div>
+	</article>
+
+		<article>
+		<h2>Border-style</h2>
+		<div class="beskrivning" >
+			<p>Egenskapen <code>border-style</code> bestämmer vilken stil kanten ska ha. Det går till exempel att välja ifall man vill ha en prickig kant eller en solid kant, eller ifall man inte vill ha någon kant alls.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div  {
+				border-style: dotted;
+			}
+		</code></p>
+		</div>
+	</article>
+
+	<article>
+		<h2>Border-width</h2>
+		<div class="beskrivning" >
+			<p>Egenskapen <code>border-width</code> bestämmer tjockleken på en kant. Genom att ge egenskapen ett värde så kan man välja ifall det ska vara en tjock eller en smal kant. Detta kan göras genom att sätta värdet i fördefinerade systemstorlekar eller genom att sätta värdet i px(pixlar)</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div  {
+				    border-style: solid;
+    				border-width: 15px;
+			}
+		</code></p>
+		</div>
+	</article>
+
+	<article>
+		<h2>Padding</h2>
+		<div class="beskrivning" >
+			<p>Egenskapen <code>padding</code> bestämmer avståndet mellan innehållet i taggen till kanten som går runt "lådan". Detta används för att generera avstånd runt om innehållet.</p>
+			<p>Nedan exempel ger 5px på varje sida om innehållet till kanten. </p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div  {
+				padding: 50px;
+			}
+		</code></p>
+		</div>
+	</article>
+
+	<article id="OutlineBeskrivning">
+		<h2>Outline</h2>
+		<div class="beskrivning" >
+			<p>Egenskapen <code>outline</code> är en linje som skrivs ut runt om ett element. Utanför kanten(border) men innanför den marginal(margin) man sätter.</p>
+			<p>Detta används för att få en del av sidan att synas lite mer än andra på samma sätt som vi har gjort för denna artikel.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div  {
+				outline: #00FF00 dotted thick;
+			}
+		</code></p>
+		</div>
+	</article>
+
+
+	<article>
+		<h2>Visibility</h2>
+		<div class="beskrivning" >
+			<p>Egenskapen <code>visibility</code> bestämmer ifall en del på sidan ska synas eller inte. Delar som med hjälp av <code>visibility</code> egenskapen inte visas på skärmen tar ändå upp plats. För att gömma delar som inte ska ta upp någon plats kan man använda sig av <code>display</code> egenskapen.</p>
+			<p>De vanligaste värden som används med <code>visibility</code> är <code>hidden</code> och <code>visible</code>.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div  {
+				visibility: hidden;
+			}
+		</code></p>
+		</div>
+	</article>
+
+	<article>
+		<h2>Visibility</h2>
+		<div class="beskrivning" >
+			<p>Egenskapen <code>visibility</code> bestämmer ifall en del på sidan ska synas eller inte. Delar som med hjälp av <code>visibility</code> egenskapen inte visas på skärmen tar ändå upp plats. För att gömma delar som inte ska ta upp någon plats kan man använda sig av <code>display</code> egenskapen.</p>
+			<p>De vanligaste värden som används med <code>visibility</code> är <code>hidden</code> och <code>visible</code>. Men det finns även fler egenskaper som ni kan läsa mer om på <a href="http://www.w3schools.com/cssref/pr_class_visibility.asp">w3chools.com</a></p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div  {
+				visibility: hidden;
+			}
+		</code></p>
+		</div>
+	</article>
+
+	<article>
+		<h2>clip</h2>
+		<div class="beskrivning" >
+			<p>Egenskapen <code>clip</code> används för att klippa av ett element som har en absolut position ifall elementet blir större än det element som det ligger i.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div  {
+				    position: absolute; clip: rect(0px,60px,200px,0px);
+			}
+		</code></p>
+		</div>
+	</article>
+
+	<article>
+		<h2>Display</h2>
+		<div class="beskrivning" >
+			<p>Egenskapen <code>display</code> definerar vilken typ av "låda" som ska användas för HTML elementet. Detta kan användas på en rad olika sätt, till exempel om du sätter värdet "none" så kommer elementet att inte visas på skärmen och den kommer inte heller att påverka resten av designen. Använder du värdet "list-item" så kommer elementet bete sig som att den låg i en <code>&lt;li&gt;</code>-tagg. För att se fler värden att använda tillsammans med egenskapen <code>display</code> gå till <a href="http://www.w3schools.com/cssref/pr_class_display.asp">W3shcools.com</a></p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div  {
+				    display: list-item;
+			}
+		</code></p>
+		</div>
+	</article>
+
+	<article>
+		<h2>Overflow</h2>
+		<div class="beskrivning" >
+			<p>Egenskapen <code>Overflow</code> specificerar vad som kommer hända ifall andra element skulle överskugga detta elements låda. Egenskapen bestämmer ifall innehållet i elementet ska klippas av eller ifall det ska läggas till en så kallad scrollbar om när ett elements innehåll är för stort för att få plats på en specifik yta.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div  {
+			        width: 150px;
+				    height: 150px;
+					overflow: scroll;
+			}
+		</code></p>
+		</div>
+	</article>
+
+		<article>
+		<h2>Transparant box</h2>
+		<div class="beskrivning" >
+			<p>Det finns olika sätt att åstakomma en box som är gradvis transparant, här ska jag förklara två av dom.</p>
+			<h3>RGBA</h3>
+			<p>RGBA är ett värde och en förlängning på färgsättnings modellen RGB där "A" står för alpha som är ett värde som avgör dess transparenta förmåga. 0.0 är helt genomskinligt medans 1.0 är fullt färgsatt. Till exempel så skulle <code>{background-color: rgba(255, 0, 0, 0.3);}</code> innebära att bakgrundsfärgen blir en genomskinlig röd färg.</p>
+			<h3>Opacity</h3>
+			<p>Egenskapen <code>Opacity</code> sätter en nivå av genomskinlighet där 0.0 är helt genomskinligt och 1.0 är standardvärdet för enheten. Om man till exempel sätter <code>{opacity: 0.5;}</code> så blir elementet till 50% genomskinligt.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div  {
+			        opacity: 255,0,0,0.3;
+			}<br /><br />
+
+			div2  {
+			        background-color: red;
+			        opacity: 0.3;
+			}
+		</code></p>
+		</div>
+	</article>
+
+	<article>
+		<h2>Runda hörn</h2>
+		<div class="beskrivning" >
+			<p>Egenskapen <code>border-radius</code> används för att lägga till rundade hörn på ett element. Ifall man endast anger ett värde i egenskapen så får alla fyra hörn samma värde. <p>Men man kan även välja att lägga in två, tre eller fyra värden till egenskapen.</p> 
+			<p>Vid två värden så anger det första värdet det övre vänstra hörnet samt det nedre högra, och det andra värdet anger det övre högra samt nedre vänstra.</p>
+			<p>Vid tre värden så anger det första värdet det övre vänstra, det andra värdet anger det övre högra samt det nedre vänstra, och det tredje värdet anger det nedre högra hörnet.</p>
+			<p>Vid fyra värden så anger det första värdet det övre vänstra hörnet, det andra värdet anger det övre högra hörnet, det tredje värdet anger det nedre högra hörnet, och det fjärde värdet anger nedre vänstra hörnet.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div  {
+			        border: 2px solid; border-radius: 10px 15px 20px 25px;
+			}
+		</code></p>
+		</div>
+	</article>
+
+	<article id="multippBak">
+		<h2>Multippla bakgrundsbilder</h2>
+		<div class="beskrivning" >
+			<p>Genom att använda egenskapen <code>background-image</code> i CSS så kan man lägga till multippla bakgrundsbilder. Om man vill använda flera bilder så kan man separera dem med ett komma och de kommer då att ligga ovangå varandra där den första bilden är överst. Du kan sedan positionera de olika bilderna genom att använda egenskapen <code>background-position</code>.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			#div {<br />
+			    background-image: url(bgPic.gif), url(bgPic2.gif);<br />
+			    background-position: right bottom, left top;<br />
+			    background-repeat: no-repeat, repeat;<br />
+			}
+		</code></p>
+		</div>
+	</article>
+
+	<article id="boxShadow">
+		<h2>Skuggad box</h2>
+		<div class="beskrivning" >
+			<p>För att sätta en skugga på en box kan man använda sig av egenskapen <code>box-shadow</code>. Den sätter en eller flera skuggor på ett HTML element.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+		#div {
+			box-shadow: 10px 10px 50px #888888;
+		}
+		</code></p>
+		</div>
+	</article>
+
+	<article id="gradient">
+		<h2>Gradienter</h2>
+		<div class="beskrivning" >
+			<p>Gradienter i CSS3 gör så att du kan skapa mjuka övergångar mellan två eller fler färger.</p>
+			<p>Tidigare var man tvungen att använda bilder för att skapa denna typ av effekt. Men genom att använda CSS3 gradients så kan man öka laddhastigheten och bandbredden som behövs för att öppna sidan.</p>
+			<ul>
+				<li>Linjär Gradient (går ner/upp/vänster/höger/diagonalt)</li>
+				<li>Radiär Gradient (definerat av sin centerpunkt)</li>
+			</ul>
+			<h3>Linjär gradient</h3>
+			<p>För att skapa en linjär gradient så måste man definera minst två färgstopp. Färgstopp är färgerna som man vill ska rendera med en mjuk övergång. Man kan ockå sätta en start punkt och en riktning tillsammans med gradientens effekt. Se exempel nedan(denna box är gjord med en linjär gradient).</p>
+			<h3>Radiär gradient</h3>
+			<p>För att skapa en radiär gradient så måste du även här definera mist två färgstopp. Man kan här även sätta värde för form. Den första färgen defineras som start färg och kommer att vara den som sitter i centrum. Se exempel nedan.</p>
+		</div>
+
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<h4>Linjär gradient</h4>
+		<p><code>
+		#div {
+			box-shadow: 10px 10px 50px #888888;
+		}
+		</code></p>
+
+		<h4>Radiär gradient</h4>
+		<p><code>
+		#div {
+			background: radial-gradient(blue, green, red);
+		}
+		</code></p>
+
+		</div>
+	</article>
+
+
+</body>
+</html>

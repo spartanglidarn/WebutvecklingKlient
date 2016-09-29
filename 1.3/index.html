@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<title>Semantiska element för text</title>
+<meta charset="UTF-8">
+
+</head>
+<body>
+<header><h1>Semantiska element för text</h1></header>
+<article>
+<h2><code>&lt;mark&gt;</code></h2>
+<p>
+<code>&lt;mark&gt;</code>-taggen används för att definera markerad text. Denna lägger man in när man vill markera ett kort stycke av en text. 
+</p>
+<h3>Exempel:</h3>
+<p>Glöm inte bort att köpa <mark>mjölk</mark> på vägen hem från jobbet.</p>
+</article>
+
+<article>
+<h2><code>&lt;time&gt;</code> med datetime attribut</h2>
+<p>
+<code>&lt;time&gt;</code>-taggen används för att skriva in ett datum/tid som är läsbart av en människa. Taggen kan också användas för att lägga in datum och tid som kan läsas av en dator. Detta görs genom att lägga till datetime attribut till taggen. Genom att lägga in datum och/eller tid som kan läsas av en dator kan man på så sätt erbjuda sina användare att lägga till tidpunkten i sin kallender, det hjälper även sökmotorer att visa ett bättre resultat.
+</p>
+<h3>Exempel:</h3>
+<p>Vi öppnar butiken kl <time datetime="10:00">10:00</time> varje morgon</p>
+
+<h4>Kod:</h4>
+<p>
+	<code>&lt;time datetime="10:00"&gt;10:00&lt;/time&gt;</code>
+</p>
+</article>
+
+<article>
+<h2><code>&lt;wbr&gt;</code></h2>
+<p>
+<code>&lt;wbr&gt;</code>-taggen används för att berätta för webbläsaren när det är ok att lägga till ett radbryt i en text. Om t ex ett ord är för långt eller om man är orolig för att webbläsaren kommer att göra ett radbryt vid fel tillfälle så kan man lägga till en <code>&lt;wbr&gt;</code>-tagg för att ge webbläsaren ett tillfälle där den kan göra radbryt utan att det förstör texten.
+</p>
+<h3>Exempel:</h3>
+<p>Det här är ett jättejättejättejättejättejättejättejättejättejättejättejättejättejättejättejättejättejätte<wbr>långtordsombryterpånågra<wbr>specifikaplatsernärwebbläsaren<wbr>ändrarstorlek</p>
+
+<h4>Kod:</h4>
+<p>
+	<code>&lt;p&gt;Det här är ett jättejättejättejättejättejättejättejättejättejättejättejättejättejättejättejättejättejätte&lt;wbr&gt;långtordsombryterpånågra&lt;wbr&gt;specifikaplatsernärwebbläsaren&lt;wbr&gt;ändrarstorlek&lt;/p&gt;</code>
+</p>
+</article>
+
+
+
+</body>
+</html>

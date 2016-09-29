@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<title>Teckenkod</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<a href="../main.html">Tillbaka till lista över taggar</a>
+<h1>Teckenkod</h1>
+<p>Teckenkodning läggs in högst upp i &lt;head&gt; taggen av ett HTML dokument för att berätta för webläsaren vilken kodning dokumentet har. Deklarationen ska rymmas inom de första 1024 bytes från början av filen.</p>
+<p>Deklarationen kan läggas in på två olika sätt. Antingen genom att använda elementet <code>meta</code> med attributet <code>charset</code>. Eller genom att använda attributen <code>http-equiv</code> och <code>content</code>. Se nedan exempel</p>
+
+<h2>Exempel 1: meta charset</h2>
+<p><code>
+	&lt;!DOCTYPE html&gt; <br />
+	&lt;html&gt; <br /><br />
+		&lt;head&gt; <br /><br />
+		<strong>&lt;meta charset="utf-8"/&gt;</strong> <br />
+		&lt;/head&gt; <br /><br />
+		&lt;body&gt; <br />
+		&lt;/body&gt; <br /><br />
+	&lt;/html&gt; <br />
+</code></p>
+
+<h2>Exempel 2: http-equiv och content</h2>
+<p><code>
+	&lt;!DOCTYPE html&gt;<br />
+	&lt;html&gt; <br /><br />
+		&lt;head&gt; <br /><br />
+		<strong>&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;</strong> <br />
+		&lt;/head&gt; <br /><br />
+		&lt;body&gt; <br />
+		&lt;/body&gt; <br /><br />
+	&lt;/html&gt; <br />
+</code></p>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<title>Formulär</title>
+<meta charset="UTF-8">
+
+</head>
+<body>
+<form action="http://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.1/perl/example.cgi
+" method="get">
+<fieldset>
+	<legend>Registrera dig:</legend>
+	<fieldset>
+		<legend>Personuppgifter:</legend>
+		<label>Användarnamn:</label><br />
+		<input type="text" name="Användarnamn" placeholder="Användarnamn" autofocus required><br />
+
+		<label>Förnamn:</label><br />
+		<input type="text" name="Förnamn" placeholder="Förnamn" required><br />
+		<label>Efternamn:</label><br />
+		<input type="text" name="Efternamn" placeholder="Efternamn" required><br />
+
+		<label>Vilket decenium är du född</label><br />
+		<input type="number" name="Födelsedecenium" placeholder="Födelsedecenium" min="1900" max="2010" step="10"><br />
+		<label>Vilket datum är du född</label><br />
+		<input type="date" name="födelsedatum" required><br />
+		<label>Vilket datum och tid är du född:</label><br />
+		<input type="datetime-local" name="födelsedatumPlusTid" required><br />
+		<label>Email:</label><br />
+		<input type="email" name="email" placeholder="Email" required><br />
+		<label>Din hemsida:</label><br />
+		<input type="url" name="hemsida" placeholder="Din hemsida"><br />
+
+
+		<label>Lösenord:</label><br />
+		<input type="password" name="Lösenord" placeholder="Lösenord" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Måste innehålla minst en siffra, en stor bokstav och en liten bokstav samt minst 8 tecken."><br />
+		<label>Verifiera lösenord:</label><br />
+		<input type="password" name="LösenordVerif" placeholder="Verifiera ditt lösenord" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Måste innehålla minst en siffra, en stor bokstav och en liten bokstav samt minst 8 tecken."><br />
+
+		<input type="radio" name="kön" value="man"><label>Man</label><br />
+		<input type="radio" name="kön" value="kvinna"><label>Kvinna</label><br />
+		<input type="radio" name="kön" value="inckeBinär" checked><label>Icke binär</label><br />
+	</fieldset>
+	<fieldset>
+		<legend>Beskrivning</legend>
+		<label>Beskrivning:</label><br />
+		<textarea name="Beskrivning" rows="15" cols="35" placeholder="Beskriv dig själv här"></textarea><br />
+	</fieldset>
+	<fieldset>
+		<legend>Frågor:</legend>
+		<label>Vilken månad dog Tupac Shakur:</label><br />
+		<input type="month" name="2PacDödMånad"><br />
+		<label>Vilken vecka är julafton 2016:</label><br />
+		<input type="week" name="veckaJulafton"><br />
+		<label>Vad är kl hos dig just nu:</label><br />
+		<input type="time" name="klockanJustNu"><br />
+	</fieldset>
+
+	<fieldset>
+		<legend>Vilkor:</legend>
+		<label>Godkänner du <a href="#">dessa vilkor</a></label><br />
+		<input type="checkbox" name="godkännVilkor" required><br />
+	</fieldset>
+	<fieldset>
+		<legend>Kryptering:</legend>
+		<label>Välj krypteringsnivå:</label>
+		<keygen name="krypteringsnivå">
+	</fieldset>
+	<label>Vilken webläsare använder du?</label><br />
+	<input list="webbläsare" name="webbläsare"><br />
+	<datalist id="webbläsare">
+		<option value="Internet Explorer">
+		<option value="Firefox">
+		<option value="Chrome">
+		<option value="Opera">
+		<option value="Safari">
+	</datalist>
+
+
+	<label>Vad tycker du om detta fomulär(min-max)</label><br/>
+	<input type="range" name="rösta" min="0" max="10" step="1"><br />
+	<label>Återställ formulär:</label><br />
+	<input type="reset" name="reset"><br />
+	<label>Registrera dig:</label><br />
+	<input type="submit" name="submit"><br />
+	<input type="image" name="image" src="html5logo.png" width="50" height="50" alt="html5logo"><br />
+	<label>En knapp:</label><br />
+	<input type="button" name="button" value="Knapp">
+</fieldset>
+</form>
+
+<form enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.2/perl/example.cgi" method="post">
+	<fieldset>
+		<legend>Ladda upp fil</legend>
+		<input type="file" name="file"><br />
+		<input type="submit" name="file">
+	</fieldset>
+</form>
+
+
+</body>
+</html>

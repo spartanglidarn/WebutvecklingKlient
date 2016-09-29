@@ -1,0 +1,34 @@
+@page { 
+	size:7.5in 20in; 
+	margin: 1cm;
+}
+
+#body {
+	background-color: yellow;
+}
+
+
+#leftCol {
+	visibility: hidden;
+}
+
+#rightCol {
+	visibility: hidden;
+}
+
+h1 {
+	page-break-before: always;
+}
+
+article {
+	page-break-inside: avoid;
+}
+
+footer{
+	page-break-after: always;
+}
+
+#beskrivning {
+	orphans: 5;
+	widows: 5;
+}

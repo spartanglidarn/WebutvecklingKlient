@@ -1,0 +1,61 @@
+a:active {
+	color: yellow;
+}
+
+#hoverLank:hover {
+	font-size: 2em;
+}
+
+li li {
+	color: black;
+	text-decoration: none;
+	list-style: circle;
+	margin-left: 30px;
+}
+
+#w3lank {
+	cursor: crosshair;
+}
+
+#buttonArticle {
+	background-color: #3D9970;
+}
+
+#linkButton a{
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 15px;
+	padding: 15px 35px; 
+	background-color: black;
+	color: #3D9970;
+	font-weight: 700;
+	text-decoration: none;
+	box-shadow: 15px 15px 15px rgba(0,0,0, 0.4);
+}
+
+#linkButton a:hover {
+	background-color: #3D9970;
+	color: black;
+	text-decoration: underline;
+}
+
+
+#linkButton2 img {
+	height: 200px;
+	margin-top: 30px;
+}
+
+#linkButton2 img:hover {
+	content: url("buttonImg3.png");
+}
+
+#linkButton2 img:active {
+	content: url("buttonImg2.png");
+}
+
+
+#linkButton2 a{
+	display: inline-block;
+	font-weight: 700;
+	color: black;	
+}

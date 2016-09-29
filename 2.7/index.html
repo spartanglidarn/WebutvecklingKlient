@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<link rel="stylesheet" type="text/css" href="../2.1/style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<title>Sidlayout</title>
+</head>
+<body>
+<header>
+	<h1>Sidlayout</h1>
+</header>
+	<article>
+		<h2>webbsideslayout</h2>
+		<div class="beskrivning">
+		<p>
+			När man pratar om webbsideslayout så pratar man ofta om själva uppbyggnaden av en webbsida. Vilka grundprinciper som ska gälla och vilka element man skan använda sig av. Tre kända principer som finns är Fixerad, Flytande och Elastisk. Kallat på engelska för Fixed, fluid och Elastic. Dessa tre går ut på att bestämma hur de olika elementen på en websida ska bete sig på olika skärmar och datorer. Exempel på hur sidor med de olika priciperna kan se ut hittar ni i listan nedan.<br>
+			Det vanligaste är att man i en webbsideslayout visar inehållet på en sida i olika kollumner. Man placerar sedan ut dessas kollumner på sidan enligt den design som man vill uppnå.
+		</p>
+			<ul>
+				<li><a href="fixerad.html">Fixerad design</a></li>
+				<li><a href="flytande.html">Flytande design</a></li>
+				<li><a href="elastisk.html">Elastisk design</a></li>
+			</ul>
+		
+		</div>
+		<h3>Fixerad design</h3>
+		<div class="beskrivning">
+		<p>
+		En fixerad design betyder att man skapar ett element som fungerar som ett omslag för de andra collumnerna, detta omslag har sedan ett fast värde för sin bredd. De kollumner som man sedan lägger innuti detta omslag kan har bredd baserat på procent eller ett fast värde(så som pixlar), men det viktiga är att omslaget inte ändrar storlek oavsett vilken upplösning användarens skärm har.
+		</p>
+		</div>
+		<h3>Flytande design</h3>
+		<div class="beskrivning">
+		<p>
+		En flytande design har den större delen av element en procentuell bredd och den kommer därför att anpassa sig beroende på vilken typ av upplösning användaren har på sin skärm. Vissa enheter på siten kan sättas med en fast bredd men majoriteten och den allmänna principen ska vara att använda sig av procentuella värden när det kommer till bredd. 
+		</p>
+		</div>
+		<h3>Elastisk design</h3>
+		<div class="beskrivning">
+		<p>
+		En elastisk design är lite av en blandning mellan Fixerad och Flytande design. Denna typ av design är baserad på att man använder sig av em för att bestämma vilken storlek det ska vara på element som finns på sidan. Skillnaden mellan en pixel och em är att en pixel är ett helt fast värde som alltid kommer vara den samma på användarens skärm, men en em representerar fontens storlek och dess storlek blir därför alltid relativ till vilken textstorlek användaren har på sin skärm.
+		</p>
+		</div>
+</article>
+
+<article>
+		<h2>CSS vs tabeller</h2>
+		<div class="beskrivning">
+		<p>
+			En gammal metod för att skapa en sidlayout var att använda sig av HTML elementet <code>&lt;table&gt;</code> och på så sätt skapa olika kollumner som man sedan kunda placera ut och ändra storlekar på. Detta anses dock numera som ett dåligt sätt att designa en sida på. En av anledningarna till detta är att <code>&lt;table&gt;</code>-taggen aldrig var designad för att skapa en layout, syftet för denna tag är att publicera tabellstrukturerad data. Detta gör att koden blir väldigt strulig och svår att läsa, det blir även extremt svårt att göra förändringar i designen vid ett senare skeden. 
+		</p>
+		</div>
+
+</article>
+
+	<article>
+		<h2>Positions egenskaper</h2>
+		<h3>position</h3>
+		<div class="beskrivning">
+		<p>
+		Egenskapen position specificerar den typ av positionering som används på ett element. Den kan vara statisk, relativ, absolut eller fixerad. 
+		</p>
+		</div>
+		<h3>Top</h3>
+		<div class="beskrivning">
+		<p>
+			Egenskapen top används för att sätta ett avstånd från elementets övre kant till den övre kanten på sin närmsta positionerade förälder. Ett positionerat element innebär ett element som inte har värdet static satt på egenskapen position.<br>Värt att nämna är även att ifall ett absolut positionerat element inte har någon positionerad förälder så kommer den att använda sig av dokumentets <code>&lt;body&gt;</code>-tagg för denna uträkning.
+		</p>
+		</div>
+		<h3>Left</h3>
+		<div class="beskrivning">
+		<p>
+			Egenskapen left används för att sätta ett avstånd från elementets vänstra kant till den vänstra kanten på sin närmsta positionerade förälder. Ett positionerat element innebär ett element som inte har värdet static satt på egenskapen position.<br>Värt att nämna är även att ifall ett absolut positionerat element inte har någon positionerad förälder så kommer den att använda sig av dokumentets <code>&lt;body&gt;</code>-tagg för denna uträkning.
+		</p>
+		</div>
+		<h3>Bottom</h3>
+		<div class="beskrivning">
+		<p>
+			Egenskapen bottom används för att sätta ett avstånd från elementet nedre kant till den undre kanten på sin närmsta positionerade förälder. Ett positionerat element innebär ett element som inte har värdet static satt på egenskapen position.<br>Värt att nämna är även att ifall ett absolut positionerat element inte har någon positionerad förälder så kommer den att använda sig av dokumentets <code>&lt;body&gt;</code>-tagg för denna uträkning.
+		</p>
+		</div>
+		<h3>Right</h3>
+		<div class="beskrivning">
+		<p>
+			Egenskapen right används för att sätta ett avstånd från elementet högra kant till den höra kanten på sin närmsta positionerade förälder. Ett positionerat element innebär ett element som inte har värdet static satt på egenskapen position.<br>Värt att nämna är även att ifall ett absolut positionerat element inte har någon positionerad förälder så kommer den att använda sig av dokumentets <code>&lt;body&gt;</code>-tagg för denna uträkning.
+		</p>
+		</div>		
+		<h3>Z-index</h3>
+		<div class="beskrivning">
+		<p>
+			Egenskapen z-index används för att sätta prioritering på vilket element som ska ligga ovanpå andra element. Ett element med högre z-index ligger alltid ovanpå ett element med ett lägre z-index. <br>
+			Z-index fungerar dock endast på positionerade element, alltså element som har något av nedan tre värden på egenskapen position.
+		</p>
+			<ul>
+				<li>absolut</li>
+				<li>relative</li>
+				<li>fixed</li>
+			</ul>
+		
+		</div>
+		<h3>Float</h3>
+		<div class="beskrivning">
+		<p>
+			Egenskapen float specificerar ifall ett element ska vara "flytande" eller ej. Denna egenskap ignoreras dock ifall ett element har en absolut positionering.
+		</p>
+		</div>
+		<h3>clear</h3>
+		<div class="beskrivning">
+		<p>
+			Egenskapen clear bestämmer om samt på vilken sida ett "flytande" element inte är tillåtet. Sitter värdet "left" så får ingenting flyta till vänster om elementet.
+		</p>
+		</div>							
+		</article>
+
+<article>
+		<h2>Storleks egenskaper</h2>
+		<h3>Width</h3>
+		<div class="beskrivning">
+		<p>
+		Egenskapen width sätter bredden på ett element, denna egenskap räknar inte med padding, border eller margin. Den sätter alltså bredden innanför padding och margin. 
+		</p>
+		</div>
+		<h3>Height</h3>
+		<div class="beskrivning">
+		<p>
+		Egenskapen height sätter höjden på ett element, denna egenskap räknar inte med padding, border eller margin. Den sätter alltså höjden innanför padding och margin. 
+		</p>
+		</div>
+		<h3>max-width</h3>
+		<div class="beskrivning">
+		<p>
+		Egenskapen max-width sätter den maximala bredden på ett element. Detta förhindrar att värdet på width egenskapen blir större än max-width.<br>Notera även att värdet på max-width alltid väger tyngre än värdet på width.
+		</p>
+		</div>
+		<h3>max-height</h3>
+		<div class="beskrivning">
+		<p>
+		Egenskapen max-height sätter den maximala höjden på ett element. Detta förhindrar att värdet på height egenskapen blir större än max-height.<br>Notera även att värdet på max-height alltid väger tyngre än värdet på height.
+		</p>
+		</div>
+		<h3>min-width</h3>
+		<div class="beskrivning">
+		<p>
+		Egenskapen min-width sätter den minsta bredden på ett element. Detta förhindrar att värdet på width egenskapen blir lägre än min-width.<br>Notera även att värdet på min-width alltid väger tyngre än värdet på width.
+		</p>
+		</div>
+		<h3>min-height</h3>
+		<div class="beskrivning">
+		<p>
+		Egenskapen min-height sätter den minsta höjden på ett element. Detta förhindrar att värdet på height egenskapen blir lägre än min-height.<br>Notera även att värdet på min-height alltid väger tyngre än värdet på height.
+		</p>
+		</div>
+		<h3>Vertical-align</h3>
+		<div class="beskrivning">
+		<p>
+		Egenskapen vertical-align sätter den vertikala linjeringen för ett element.
+		</p>
+		</div>		
+</article>
+
+<article>
+		<h2>CSS kollumner</h2>
+		<div class="beskrivning">
+		<p>
+			Förutom de separata kollumner som man kan bygga upp med hjälp av css och div element så finns det även en inbyggd för funktion för kollumner i CSS som direkt delar upp ett element i flera kollumner. <br>
+			Det finns ganska många egenskaper för detta och det går till exempel att läsa mer om dem på <a href="http://www.w3schools.com/css/css3_multiple_columns.asp">W3 schools.</a> men i denna artikel tänkte jag endast titta närmare på två av dom, column-count och column-width.
+		</p>
+		<h3>Column-count</h3>
+		<p>Column-count används för att bestämma hur många kollumner som ska finnas i enheten.</p>
+		<h3>Column-width</h3>
+		<p>Column-width används för att välja bredden på varje kollumn som finns i elementet.</p>
+		<p>Nedan har jag skapat ett exempel där jag har satt Column-count till 3 och column-width till 50px. Notera att när man använder sig av denna typ av kollumner så flödar texten över till nästa kollumne när den första är full.</p>
+		</div>
+
+		<div class="exempel" id="columnEx">
+		<h3>Exempel</h3>
+		<p><code>
+			div {<br />
+				column-count: 3;<br />
+				column-width: 50px;<br />
+			}<br />
+		</code></p>
+			<div id="kollumnExempel">
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+				</p>
+			</div>
+		</div>
+
+</article>
+
+
+</body>
+</html>

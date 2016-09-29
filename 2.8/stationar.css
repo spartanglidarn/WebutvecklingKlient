@@ -1,0 +1,63 @@
+body {
+	font-family: 'Helvetica Neue', sans-serif, Arial;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+	color: #111; 
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-decoration: underline;
+}
+p { 
+	color: grey; 
+}
+
+header {
+	clear: both;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+}
+
+
+
+#container {
+	border: 1px solid black;
+	width: 100%;
+}
+
+#leftCol {
+	border: 1px solid black;
+	width: 20%;
+	float: left;
+	margin: 5% 1% 5% 0%;
+
+
+}
+
+
+
+#centerCol {
+	border: 1px solid black;
+	width: 50%;
+	float: left;
+	margin: 5% 1%;
+}
+
+#rightCol {
+	border: 1px solid black;
+	width: 20%;
+	float: left;
+	margin: 5% 0% 5% 1%;
+
+}
+

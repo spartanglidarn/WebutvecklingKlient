@@ -1,0 +1,43 @@
+header {
+	border:1px solid black;
+	clear: both;
+	margin: 10px 0px;
+	text-align: center;	
+}
+
+footer {
+	border:1px solid black;	
+	clear: both;
+	text-align: center;	
+}
+
+p {
+	margin: 0px 5px 5px;
+}
+
+#container {
+	position: absolute;
+	border:1px solid black;
+	width: 98%;
+}
+
+#leftCol {
+	border:1px solid black;
+	width: 20%;
+	margin: 0% 1% 0% 0%;
+	float: left;	
+}
+
+#centerCol {
+	border:1px solid black;
+	width: 50%;
+	margin: 0% 1%;
+	float: left;
+}
+
+#rightCol {
+	border:1px solid black;
+	width: 20%;
+	margin: 0% 1%;
+	float: left;	
+}

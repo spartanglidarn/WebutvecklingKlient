@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<title>Uppgift 1.2</title>
+<meta charset="UTF-8">
+
+</head>
+<body>
+<header>
+	<h1>Uppgift 1.2</h1>
+	<h2>Header</h2>
+	<p><code>&lt;header&gt;</code>-taggen används för representera ett område med inledande information eller navigationslänkar</p>
+	<p>Du kan ha flera <code>&lt;header&gt;</code>-taggar i samma dokument men du får inte placera en <code>&lt;header&gt;</code>-tagg i en <code>&lt;footer&gt;</code>, <code>&lt;address&gt;</code> eller en annan <code>&lt;header&gt;</code>-tagg.</p>
+	<p>Några exempel på vad header kan användas till följer nedan</p>
+	<ul>
+		<li>En eller flera rubriker(<code>&lt;h2&gt;</code>,<code>&lt;h2&gt;</code>,<code>&lt;h3&gt;</code>....</li>
+		<li>Logos eller iconer</li>
+		<li>Information om författaren</li>
+	</ul>
+</header>	
+
+<nav>
+	<h2>Nav</h2>
+	<p><code>&lt;nav&gt;</code>-taggen definerar en grupp av navigations länkar som hör till den huvudsakliga navigationen på sidan. Alla länkar på en sida ska inte ligga inom <code>&lt;nav&gt;</code>-taggen. Sen nedan lista för ett exempel på länkar som kan ligga inom <code>&lt;nav&gt;</code>-taggen</p>.
+	<p>Skärmläsar mjukvara kan använda detta element för att avgöra ifall de ska läsa in informationen.</p>
+	<ul>
+		<li><a href="#">Startsida</a></li>
+		<li><a href="#">Om oss</a></li>
+		<li><a href="#">Kontakt</a></li>
+		<li><a href="#">Semantiska element</a></li>
+	</ul>
+</nav>
+
+
+<article>
+	<h2>Article</h2>
+	<p>En <code>&lt;article&gt;</code>-taggen används till självständigt innehåll som är helt oberoende av annat innehåll på sidan. Innehållet som ligger i en <code>&lt;article&gt;</code>-tagg ska vara självklart på egenhand utan andra delar av sidan så som footer eller navigation.</p>
+	<p>Några exempel på innehåll som <code>&lt;article&gt;</code> kan änvändas till är följande</p>
+	<ul>
+		<li>Foruminlägg</li>
+		<li>Blogginlägg</li>
+		<li>Nyhetsartiklar</li>
+		<li>Kommentarer</li>
+	</ul>
+</article>
+
+<section>
+	<h2>Section</h2>
+	<p><code>&lt;section&gt;</code>-taggen definerar en del av ett dokument, så som ett kapitel, rubriker, sidnotiser eller andra delar av ett dokument.</p>
+	<p>Den största skillnaden mellan en <code>&lt;section&gt;</code>-tagg och en <code>&lt;article&gt;</code>-tag är att <code>&lt;section&gt;</code> inte behöver vara fristående på samma sätt som en <code>&lt;article&gt;</code>. Man kan ofta lägga flera <code>&lt;section&gt;</code>-taggar i en <code>&lt;article&gt;</code>-tagg.</p>
+</section>
+
+<figure>
+	<h2>Figure</h2>
+	<p><code>&lt;figure&gt;</code>-taggen används för delar av ett dokument som de är relevant till men delarna som ligger innanför <code>&lt;figure&gt;</code>-taggen är inte väsentliga för resterande dokumentet. Så om informationen skulle tas bort så påverkar det inte den överiga informationen i dokumentet.</p>
+	<p>Information som ofta läggs i en <code>&lt;figure&gt;</code>-tagg kan vara illustrationer, diagram och photon.</p>
+	<figcaption>
+		<h3>figcaption</h3>
+		<p><code>&lt;figcaption&gt;</code>-taggen används för att lägga till en bildtext till en <code>&lt;figure&gt;</code>-tagg. Denna kan läggas som första eller sista tagg innanför en <code>&lt;figure&gt;</code>-tagg.</p>
+	</figcaption>
+</figure>	
+
+<aside>
+	<h2>Aside</h2>
+	<p><code>&lt;aside&gt;</code>-taggen används för att representera en sidnotis till den information där den är placerad.</p>
+	<h4>Exempel:</h4>
+	<p>
+		<code>
+			&lt;p&gt;Igår åkte jag till globen för att se Dixie chicks spela.&lt;/p&gt;<br />
+			&lt;aside&gt;Globen är en arena som ligger söder om Stockholm.&lt;aside&gt;
+		</code>
+	</p>
+</aside>
+
+<details>
+	<summary>Details</summary>
+	<h2>Details</h2>
+	<p><code>&lt;details&gt;</code>-taggen används för att specificera extra information som användaren själv kan välja om den ska synas på sidan eller inte.</p>
+	<p>Innanför <code>&lt;details&gt;</code>-taggen kan man även lägga en <code>&lt;summary&gt;</code>-tag, denna specificerar vad som ska visas när användaren valt att dölja det som ligger i <code>&lt;details&gt;</code>-taggen.</p>
+</details>
+
+<footer>
+	<h2>Footer</h2>
+	<p><code>&lt;footer&gt;</code>-taggen används för att definera en "footer" del av ett dokument eller en sektion av ett dokument.</p>
+	<p><code>&lt;footer&gt;</code>-taggen används ofta längst ner på sidan och innhåller nedan information.</p>
+	<ul>
+		<li>Information om utvecklare eller författare.</li>
+		<li>Copytight information</li>
+		<li>Kontakt information</li>
+		<li>En sitemap</li>
+		<li>Relaterade dokument</li>
+	</ul>
+</footer>
+
+</body>
+</html>

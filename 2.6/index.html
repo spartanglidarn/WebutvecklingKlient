@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<link rel="stylesheet" type="text/css" href="../2.1/style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<title>Tabeller och formulär</title>
+</head>
+<body>
+<header>
+	<h1>Tabeller och formulär</h1>
+</header>
+	<article>
+		<h2>table-layout</h2>
+		<div class="beskrivning">
+		<p>Egenskapen <code>table-layout</code> används för att sätta en viss typ av layout algoritm som ska användas för tabellen. De värden som går att sätta till denna egenskap är följande.</p>
+		<ul>
+			<li><h4>auto</h4>
+				<p>Auto är det värde som ligger som default på en tabel ifall man inte sätter något alls. Kollumnens bredd sätts efter den längsta ej brytbara innehållet i en cell. Denna typ av rendering kan orsaka segare laddning då webläsaren behöver läsa igenom allt innehåll i en tabell innan den kan sätta en slutgiltig layout.</p>
+			</li>
+			<li><h4>fixed</h4>
+				<p>Detta innebär att den horisontella designen endast är beroenda av tabellens bredd samt bredden av kollumnerna. Alltså inte innehållet i kollumnerna. Denna typ av design gör att webbläsaren kan rendera sidan lite snabbare då den kan börja visa tabellen så fort första raden har tagits emot.</p>
+			</li>
+			<li><h4>initial</h4>
+				<p>Sätter värdet i <code>table-layout</code> till default värdet.</p>
+			</li>
+			<li><h4>inherit</h4>
+				<p>Gör så att elementet ärver sitt värde från "förälder-elementet".</p>
+			</li>
+		</ul>
+		</div>
+
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			table {<br />
+				table-layout: auto;<br />
+			}<br />
+
+
+		</code></p>
+		</div>
+
+		<div style="overflow-x:auto;"><table>
+			<tr>
+				<th>Förnamn</th>
+				<th>Efternamn</th>
+				<th>Ålder</th>
+			</tr>
+			<tr>
+				<td>Erik</td>
+				<td>Boström</td>
+				<td>28</td>
+			</tr>
+			<tr>
+				<td>Hans</td>
+				<td>Isacsson</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<td>Nisse</td>
+				<td>Brännström</td>
+				<td>38</td>
+			</tr>
+		</table></div>
+
+
+	</article>
+
+	<article>
+		<h2>Css med formulär</h2>
+		<div class="beskrivning">
+		<p>
+			Stilen på ett formulär kan göras betydligt mycket bättre genom att använda sig av CSS. Något som är viktigt att komma ihåg när man designar ett formulär är att göra det så enkelt som möjligt för användaren att förstå vad som ska skrivas in i formuläret. Detta för att till så hög grad som möjligt undvika att felaktig data kommer in till systemet från användaren.
+		</p>
+		<p>I själva stilsättningen användar man samma egenskaper och samma typ av selektorer som när man sylar andra objekt på en sida, till exempel tabeller. Något som kan vara väldigt bra att använda sig av dock är pseudo-klasserna för input type. Detta gör det möjligt att visa olika typer av rutor på olika sätt och på så sätt visa för användaren vilken typ av information som ska skrivas i input-fältet.</p>
+		<p>I nedan exempel visar vi hur man stylar alla input-fält som är av typen text med en svart ram som har rundade kanter, samt att vi har lagt till en bakgrundsfärg i fältet när användaren väljer att markera fältet.</p>
+		</div>
+		
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			input[type=text] {<br>
+				border: 1px solid grey;<br>
+				border-radius: 15px;<br>
+
+			}<br><br>
+
+			input[type=text]:focus {<br>
+				background-color: #3D9970;<br>
+			}<br>
+
+
+		</code></p>
+		</div>
+
+		<div id="formulär">
+		<h3>Ett formulär</h3>
+			<form>
+				<label for="förnamn">Förnamn:</label><br>
+				<input type="text" name="förnamn" id="förnamn"><br>
+				<label for="efternamn">Efternamn:</label><br>
+				<input type="text" name="efternamn" id="efternamn"><br>
+				<label for="ålder">Ålder:</label><br>
+				<input type="number" name="ålder" id="ålder"><br><br>
+				<input type="submit" name="skicka">
+			</form>
+
+		</div>
+	</article>
+</body>
+</html>

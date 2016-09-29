@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<link rel="stylesheet" type="text/css" href="stationar.css">
+<link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px)" href="mobil.css">
+<link rel="stylesheet" media="print" href="print.css">
+<meta charset="UTF-8">
+<title>Grunderna i CSS 3</title>
+</head>
+<body>
+<div id="container">
+<header>
+	<h1>Grunderna i CSS 3</h1>
+</header>
+	<div id="leftCol">
+		<h4>Vänstra kollumnen</h4>
+		<ul>
+			<li><a href="#">Länk1</a></li>
+			<li><a href="#">Länk2</a></li>
+			<li><a href="#">Länk3</a></li>
+			<li><a href="#">Länk4</a></li>
+		</ul>
+	</div>
+	
+<div id="centerCol">
+	<article>
+		<h2>@Page selektor</h2>
+		<div class="beskrivning">
+			<p><code>@Page</code> selektorn i CSS används för att specificera hur en sida är formaterad inom en rektagulär yta med fast bredd och höjd.</p>
+			<p>Denna selektor kan användas med flera psudo-klasser för att specificera utseenden på vissa specifika sidor så som till exempel höger och vänster, eller första sidan.</p>
+			<p>Nedan exempel sätter sidans storlek till att vara 7,5 inches bred och 15 inches hög. Detta är då det som kommer att visas på varje sida.</p>
+		</div>	
+		<h3>Exempel</h3>
+		<div class="exempel">
+		<p><code>
+		@page { <br>
+			size:7,5in 15in;<br> 
+			margin: 1cm;<br>
+		}<br>
+		</code></p>
+		</div>
+	</article>	
+
+	<article>
+		<h2>page-break-after</h2>
+		<div class="beskrivning">
+			<p>Egenskapen page-break-after bestämmer ifall ett sidbryt ska ske efter ett visst element. Tillexempel ska man sätta denna egenskap på en footer för att vara säker på att sidbryt sker varje gång en footer har skrivits ut på sidan.</p>
+		</div>	
+		<h3>Exempel</h3>
+		<div class="exempel">
+		<p><code>
+			footer{<br>
+				page-break-after: always;<br>
+			}<br>
+		</code></p>
+		</div>
+	</article>	
+
+		<article>
+		<h2>page-break-before</h2>
+		<div class="beskrivning">
+			<p>Egenskapen page-break-before bestämmer ifall ett sidbryt ska ske före ett visst element. Ett bra användaningsområde för detta kan vara att sätta egenskapen på alla H1 taggar så att sidbryt alltid sker innan man skriver ut ett H1 element</p>
+		</div>	
+		<h3>Exempel</h3>
+		<div class="exempel">
+		<p><code>
+		h1 {<br>
+			page-break-before: always;<br>
+		}<br>
+
+		</code></p>
+		</div>
+	</article>
+
+	<article>
+		<h2>page-break-inside</h2>
+		<div class="beskrivning">
+			<p>Egenskapen page-break-inside bestämmer ifall ett sidbryt är tillåtet innut i ett element. Detta kan till exempel användas på P taggar för att undvika säkerställa att ett sidbryt inte sker mitt i en paragraf.</p>
+		</div>	
+		<h3>Exempel</h3>
+		<div class="exempel">
+		<p><code>
+			p {<br>
+				page-break-inside: avoid;<br>
+			}<br>
+
+		</code></p>
+		</div>
+	</article>
+
+	<article>
+		<h2>Size</h2>
+		<div class="beskrivning">
+			<p>Värdet size används för att sätta storleken på en "page-box". Detta kan sättas som antingen relativt värde eller absolut värde.</p>
+			<p>Nedan exempel sätter sidans storlek till att vara 7,5 inches bred och 15 inches hög. Detta är då det som kommer att visas på varje sida.</p>
+		</div>	
+		<h3>Exempel</h3>
+		<div class="exempel">
+		<p><code>
+		@page { <br>
+			size:7,5in 15in;<br> 
+			margin: 1cm;<br>
+		}<br>
+
+		</code></p>
+		</div>
+	</article>
+
+	<article>
+		<h2>orphans</h2>
+		<div class="beskrivning">
+			<p>Egenskapen orphans sätter eller retunerar det minsta antalet rader för ett element som måste vara synbart på slutet av en sida. Detta gäller för skrivare och förhandsgranskning för skrivare.</p>
+			<p>Om vi till exempel sätter värdet 4 på orphans så betyder det att det måste visas minst 4 rader i slutet av en sida innan det blir sidbryt.</p>
+		</div>	
+		<h3>Exempel</h3>
+		<div class="exempel">
+		<p><code>
+			p {<br>
+				orphans: 5;<br>
+			}<br>
+
+		</code></p>
+		</div>
+	</article>
+
+		<article>
+		<h2>widows</h2>
+		<div class="beskrivning">
+			<p>Egenskapen widows sätter eller retunerar det minsta antalet rader för ett element som måste vara synbart i början av en sida. Detta gäller för skrivare och förhandsgranskning för skrivare.</p>
+			<p>Om vi till exempel sätter värdet 4 på orphans så betyder det att det måste visas minst 4 rader i början av en sida</p>
+		</div>	
+		<h3>Exempel</h3>
+		<div class="exempel">
+		<p><code>
+			p {<br>
+				widows: 5;<br>
+			}<br>
+
+		</code></p>
+		</div>
+	</article>
+
+
+
+
+
+</div>
+
+<div id="rightCol">
+	<h4>Högra kollumnen</h4>
+	<p>Detta är den högra kollumnen.</p>
+</div>
+
+<footer>Skapad av Erik Boström 2016</footer>		
+</div>	
+</body>
+</html>

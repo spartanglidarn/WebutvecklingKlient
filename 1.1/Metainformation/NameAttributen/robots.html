@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<title>Robots</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<a href="../../main.html">Tillbaka till lista över taggar</a>
+<h1>Robots</h1>
+<p>Meta-taggen robots berättar för sökmotorers "webcrawlers" vad de ska göra. Nedan följer några exempel på dessa direktiv.</p>
+<ul>
+	<li><h3>archive / noarchive</h3><p>Berättar ifall sökmotorn ska arkivera sidan eller ej.</p></li>
+	<li><h3>follow / nofollow</h3><p>Berättar för roboten ifall den ska fortsätta att söka igenom fler sidor som denna sida refererar till genom hyperlänkar.</p></li>
+	<li><h3>imageindex / noimageindex</h3><p>Berättar ifall sidan ska finnas som en referens till bilder som kommer i sökresultat.</p></li>
+	<li><h3>index / noindex</h3><p>Berättar ifall sidan ska finnas med i sökmotorns index eller inte.</p></li>
+	<li><h3>odp / noodp</h3><p>Berättar ifall beskrivningen från ODP(Open Directory Project) ska användas.</p></li>
+	<li><h3>snippet / nosnippet</h3><p>Berättar ifall en del av sidan sak visas i sökmotorns lista av resultat.</p></li>
+	<li><h3>unavailable_after:date</h3><p>Ger sökmotorn en specifik tid och datum då den ska sluta söka igenom och indexera en sida.</p></li>
+</ul>
+
+<h2>Exempel</h2>
+<p><code>
+	<strong>&lt;!DOCTYPE html&gt;</strong> <br />
+	&lt;html&gt; <br /><br />
+		&lt;head&gt; <br />
+		&lt;meta name="robots" content="index,follow"/&gt; <br />
+		&lt;/head&gt; <br /><br />
+		&lt;body&gt; <br />
+		&lt;/body&gt; <br /><br />
+	&lt;/html&gt; <br />
+</code></p>
+
+</body>
+</html>

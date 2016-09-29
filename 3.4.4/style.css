@@ -1,0 +1,58 @@
+
+#mother *{
+	padding: 0;
+	margin: 0;
+}
+
+
+#mother ul{
+}
+
+
+#sliderList li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+
+#sliderList li a.next {
+	position: absolute;
+	left: 245px;
+	top: 90px;
+	border: 2px solid black;
+}
+
+#sliderList li a.previous {
+	position: absolute;
+	left: 10px;
+	top: 90px;
+	border: 2px solid black;
+}
+
+
+
+
+.sliderImg {
+	width: 400px;
+	height: 300px;
+}
+
+#imgOne {
+	background-color: red;
+}
+
+#imgTwo {
+	background-color: green;
+}
+
+#imgThree {
+	background-color: blue;
+}
+
+#imgFour {
+	background-color: yellow;
+}
+
+#imgFive {
+	background-color: black;
+}

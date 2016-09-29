@@ -1,0 +1,33 @@
+#borderBeskrivning {
+	border-color: red green blue pink;
+}
+
+#OutlineBeskrivning {
+	outline: #00FF00 dotted thick;
+}
+
+#multippBak {
+	background-image: url(bgPic2.png);
+	background-size: 60px;
+	background-position: right bottom;
+	background-repeat: repeat;
+}
+#multippBak h2{
+	background-color: white;
+}
+#multippBak h3{
+	background-color: white;
+}
+
+#multippBak .beskrivning p {
+	background-color: white;
+	color: grey;
+}
+
+#boxShadow {
+	box-shadow: 10px 10px 50px #888888;
+}
+
+#gradient {
+	background: linear-gradient(grey, white);
+}

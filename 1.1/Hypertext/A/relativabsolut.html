@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<title>Relativ och absolut länk</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<a href="../../main.html">Tillbaka till lista över taggar</a>
+<h1>Relativ och absolut länk</h1>
+
+<h3>Relativa länkar</h3>
+<p>Relativa länkar pekar alltid på en adress inom den webbplats som du redan är på. Till exempel kan jag länka från min start sida till en sida om mig under samma domän. Länken är alltid relativ till den plats där länken ligger.</p> 
+<p>Detta är en relativ länk &lt;a href="../main.html"&gt; startsida&lt;/a&gt; <br />
+Den pekar till en fil som ligger en folder ovanför den vår sida ligger i och filen heter main.html</p>
+
+<h3>Aboluta länkar</h3>
+<p>En absolut länk länkar alltid till en fullständig webadress inklusive domännamn samt http://www.</p>
+<p>Detta är en absolut länk  &lt;a href="http://www.google.com"&gt; Google&lt;/a&gt; <br />Den pekar mot http://www.google.com</p>
+
+Relativ länk: <a href="../../main.html">Startsida</a> <br />
+Absolut länk: <a href="http://www.google.com">Google</a>
+
+<h2>Exempel</h2>
+<p><code>
+	&lt;!DOCTYPE html&gt; <br />
+	&lt;html&gt; <br /><br />
+		&lt;head&gt; <br />
+		&lt;/head&gt; <br /><br />
+		&lt;body&gt; <br />
+		<strong>&lt;a href="../main.html"&gt;startsida&lt;/a&gt;</strong> <br />
+		<strong>&lt;a href="http://www.google.com"&gt;Google&lt;/a&gt;</strong> <br />
+		&lt;/body&gt; <br /><br />
+	&lt;/html&gt; <br />
+</code></p>
+
+</body>
+</html>

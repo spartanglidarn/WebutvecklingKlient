@@ -1,0 +1,88 @@
+table {
+	table-layout: auto;
+	border-collapse: collapse;
+	min-width: 90%;
+	margin: 30px 0px 0px 0px;
+}
+
+th {
+	height: 30px;
+	vertical-align: bottom;
+	padding-bottom: 10px; 
+	background-color: #001f3f;
+	color: white;
+}
+
+td {
+	padding: 10px 15px;
+}
+
+tr:hover {
+	background-color: #3D9970;
+}
+
+tr:nth-child(even):hover {
+	background-color: #3D9970;
+}
+
+tr:nth-child(even) {
+	background-color: #FF851B;
+}
+
+table, th, td {
+	border-bottom: 1px solid grey;
+
+}
+
+#formulär form {
+	background: #FF851B;
+	border: 1px solid black;
+	border-radius: 25px;
+	padding: 20px;
+}
+
+#formulär input {
+	max-width: 40%;
+	min-width: 20%;
+	padding: 10px 15px;
+	margin: 5px 0px 15px 0px;
+	box-sizing: border-box;
+	background-color: #DDDDDD;
+}
+
+#formulär input[type=text] {
+	border: 1px solid grey;
+	border-radius: 15px;
+
+}
+
+#formulär input[type=text]:focus {
+	background-color: #3D9970;
+
+}
+
+#formulär input[type=number] {
+	max-width: 50px;
+	min-width: 30px;
+	padding-right: 0px;
+	padding-left: 10px;
+}
+
+#formulär input[type=submit] {
+	background-color: #85144b;
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 600;
+	width: 100%;
+}
+#formulär input[type=submit]:active {
+	background-color: #3D9970;
+
+}
+
+#formulär label {
+
+}

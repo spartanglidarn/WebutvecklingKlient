@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<title>Grunderna i CSS 3</title>
+</head>
+<body>
+<header>
+	<h1>Grunderna i CSS 3</h1>
+</header>
+	<article>
+		<h2>Externt länkade CSS-fil</h2>
+		<div class="beskrivning">
+			<p>När du har extern CSS innebär det att du har en separat CSS-fil som innehåller den CSS-kod som hör till hemsidan. Detta kallas för en stilmall. Om du då vill göra en större förändring i designen på din hemsida så kan du gå in i stilmallen och göra dina förändringar.</p>
+			<p>Detta görs genom att man länkar sin CSS-fil till HTML-sidan och får på så sätt information om hur varje emlement och tagg ska visas. Länkkoden ska läggas in i <code>&lt;head&gt;</code>-taggen. Se exempel nedan</p>
+		</div>
+		<div class="exempel">
+			<h3>Exempel</h3>
+			<p><code>
+					<strong>&lt;link rel="stylesheet type="text/css" href="style.css"&gt; </strong><br />
+			</code></p>
+		</div>
+	</article>
+	
+	<article>
+		<h2>Arv</h2>
+		<div class="beskrivning">
+			<p>Många av de CSS-regler som man sätter upp går i arv till sina barn-element(ett barn-element är ett element som skrivs innuti ett annat element). Detta innebär att många av de regler som du sätter upp gäller för flera element även fast de är deklarerade till endast ett. Men det är bara vissa egenskaper i css som går i arv till barn-element. Till exempel så går "color" egenskapen i arv, men "border" egenskapen går inte i arv till sina barn-element.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><strong><code>
+			p {
+				color:red;
+			}
+
+			article {
+				border:1px solid black;
+			}
+		</code></strong></p>
+		</div>
+
+	</article>
+	
+	<article>
+		<h2>Cascade</h2>
+		<div class="beskrivning">
+			<p>"Cascade" syftar på en algoritm som definerar hur man kombinerar egenskapers värde som kommer från olika källor. Detta ligger till grund för hela kärnan i CSS och det visas genom att C i CSS står för Cascade(Cascade style sheet).</p>
+		</div>
+	</article>
+
+	<article>
+		<h2>Selektorer</h2>
+		<div class="beskrivning">
+			<p>En selektor talar om vad i HTML-dokumentet du vill formatera. Ofta består en selektor av HTML-taggens namn utan &lt; och &gt;. De kan även bestå av klasser eller identifierare som man sätter på taggarna i HTML-dokumentet. All information som ska vara kopplat till en selektor skriver man inom måsvingar( {} ).</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><strong><code>
+			p {
+				color:red;
+			}
+
+			article {
+				border:1px solid black;
+			}
+		</code></strong></p>
+		</div>
+	</article>
+
+	<article>
+		<h2>Enheter</h2>
+		<div class="beskrivning">
+			<p>I CSS kan man sätta storlekar som absoluta eller relativa enheter.</p>
+			<p>En absolut enhet innebär att storlek inte påverkas av andra objekt i dokumentet utan visas endast i förhållande till vilket värde enheten har. Några aboslutat enheter följer nedan.</p>
+			<ul>
+				<li>in (inches)</li>
+				<li>cm (centimeter)</li>
+				<li>mm (milimeter)</li>
+				<li>pt (points)</li>
+				<li>pc (picas)</li>
+			</ul>	
+			<p>En Relativ enhet innebär att storlek påverkas av andra eneheter i dokumentet. Relativa enheter skalar bättre mellan olika renderings medium, så som skärmstorlek, upplösning och pixelmängd. Några absoluta enheter följer nedan.</p>
+			<ul>
+				<li>em (relativ till fontstorleken på elementet)</li>
+				<li>ex (relativ till x-höjden av den tillfälliga fonten, används sällan)</li>
+				<li>px (relativ till antalet pixlar skärmen har)</li>
+				<li>% (relecant till den satta default-storleken på enheten)</li>
+			</ul>
+
+		</div>
+	</article>
+
+	<article>
+		<h2>CSS-dokumentets uppbyggnad</h2>
+		<div class="beskrivning">
+			<p>CSS-kodens instruktioner som även kallas stilmallar består av regler som berättar för webbläsaren hur data ska representeras på den skärm det visas. En sådan regel består av fyra olika delar enligt nedan</p>
+			<ul>
+				<li>Selektor(berättar vilken del av dokumentet som ska stylas)</li>
+				<li>Deklaration(sker inom måsvingar efter selektorn)</li>
+				<li>Egenskap (berättar vad det är som ska ändras inom selektorn)</li>
+				<li>Värde (berättar vilket värde en egenskap ska ha, till exempel storleken på en font)</li>
+			</ul>
+			<p></p>
+		</div>
+		
+	</article>
+
+	<article>
+		<h2>CSS3 fortsättning</h2>
+		<ul>
+			<li><a href="../2.2/index.html">Text och listor</a></li>
+			<li><a href="../2.3/index.html">Marginaler kantlinjer och paddning</a></li>
+			<li><a href="../2.4/index.html">Bilder och bakgrunder</a></li>
+			<li><a href="../2.5/index.html">Navigering</a></li>
+			<li><a href="../2.6/index.html">Tabeller och formulär</a></li>
+			<li><a href="../2.7/index.html">Sidlayout</a></li>
+			<li><a href="../2.8/index.html">Anpassning till olika enheter</a></li>
+		</ul>
+	</article>	
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+header {
+	border:1px solid black;
+	clear: both;
+	margin: 10px 0px;
+	text-align: center;
+}
+
+footer {
+	border:1px solid black;	
+	clear: both;
+	text-align: center;
+}
+
+p {
+	margin: 0px 5px 5px;
+}
+
+#container {
+	border:1px solid black;
+	margin: 0 auto;
+	width: 960px;
+}
+
+#leftCol {
+	border:1px solid black;
+	width: 200px;
+	margin: 0px 5px 0px 0px;
+	float: left;	
+}
+
+#centerCol {
+	border:1px solid black;
+	width: 520px;
+	margin: 0px 5px;
+	float: left;
+}
+
+#rightCol {
+	border:1px solid black;
+	width: 200px;
+	margin: 0px 5px;
+	float: left;	
+}

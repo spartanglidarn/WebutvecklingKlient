@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<title>Map</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<a href="../main.html">Tillbaka till lista över taggar</a>
+<h1>Map</h1>
+<p><code>&lt;map&gt;</code>-taggen används för att definera en bildkarta som ligger på klientsidan(en bildkarta är en bild som har klickbara områden).</p>
+<p>Namn attributet som måste finnas i <code>&lt;map&gt;</code>-taggen måste matcha usemap attributet som finns i <code>&lt;img&gt;</code>-taggen för att skapa en relation mellan bilden och kartan.</p>
+<p>&lt;map&gt;</code>-taggen innehåller sedan en eller flera <code>&lt;area&gt;</code>-taggar som definerar de klickbara områden som finns i bildkartan.</p>
+
+<img src="http://www.w3schools.com/html/html5.gif" width="145" height="126" alt="html5"
+usemap="#html5map">
+
+<map name="html5map">
+  <area shape="rect" coords="0,0,82,126" href="http://www.w3schools.com/html/html5.gif" alt="html5">
+
+</map>
+
+
+<h2>Exempel</h2>
+<p><code>
+&lt;!DOCTYPE html&gt; <br />
+	&lt;html&gt; <br /><br />
+		&lt;head&gt; <br />
+		&lt;/head&gt; <br /><br />
+		&lt;body&gt; <br />
+	<strong>
+	&lt;img src="http://www.w3schools.com/html/html5.gif" width="145" height="126" alt="html5"
+	usemap="#html5map"&gt;<br />
+
+	&lt;map name="html5map"&gt;<br />
+	  &lt;area shape="rect" coords="0,0,82,126" href="http://www.w3schools.com/html/html5.gif" alt="html5"&gt;<br />
+
+	&lt;/map&gt;<br />
+	</strong>
+		&lt;/body&gt; <br /><br />
+	&lt;/html&gt; <br />
+</code></p>
+
+</body>
+</html>

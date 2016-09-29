@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<link rel="stylesheet" type="text/css" href="../2.1/style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<title>Navigering</title>
+</head>
+<body>
+<header>
+	<h1>Navigering</h1>
+</header>
+	<article>	
+	<h2>Länktillstånd</h2>
+		<div class="beskrivning">
+		<p>En länk i ett HTML dokument kan hanteras på olika sätt beroende på vilket tillstånde den är i. Till exempel så kan den se ut på ett sätt ifall användaren har besökt länken tidigare, eller ifall de drar muspekaren över dem.</p>
+		<p>Detta görs via CSS genom att lägga till en så kallad pseudoklasser till sin selektor. Med hjälp av ett kolon efter selektorn och namnet på pseudoklassen kan man välja att styla ett visst tillstånd på ett specielt sätt. Till exempel ifall jag skulle vilja att länken ska vara gul när användaren trycker på den så kan jag skriva enligt följande. </p>
+		</div>
+<div class="exempel">
+		<code>
+		a:active {<br />
+			color: yellow;<br />
+		}<br />
+		</code><br />
+		<a href="#">test länk</a>
+		</div>
+		<div class="beskrivning">
+		<p>Eller ifall jag vill att länken ska bli större när användaren drar sin mus över den så kan jag skriva enligt följande.</p>
+		</div>
+		<div class="exempel">
+			<code>
+			a:hover {<br />
+				font-size: 2em;<br />
+			}<br />
+			</code><br />
+			<a id="hoverLank" href="#">test länk</a>
+		</div>
+
+		<h3>Pseudo-klasser</h3>
+		<ul>
+			<li>a:link
+				<ul><li>Pseudo-klassen "link" används när man vill göra förändringar på en länk som ännu inte är besökt av användaren.</li></ul>
+			</li>
+			<li>a:active
+				<ul><li>Pseudo-klassen "active" används när man vill göra förändringar på en länk vid tillfället som användaren klickar på den.</li></ul>
+			</li>
+			<li>a:visited
+				<ul><li>Pseudo-klassen "visited" används när man vill göra förändringar på en länk som användaren har besökt tidigare.</li></ul>
+			</li>
+			<li>a:hover
+				<ul><li>Pseudo-klassen "hover" används när man vill göra förändringar på en länk som användaren håller sin muspekare över.</li></ul>
+			</li>
+		</ul>
+
+		<h3>Cursor</h3>
+		<p>Egenskapen "cursor" används för att specificera hur en muspekare ska se ut när användaren håller den över ett visst element. För att se en mer specifik lista över alla typer av muspekare man kan välja på, gå till <a id="w3lank" href="http://www.w3schools.com/cssref/pr_class_cursor.asp">w3schools</a></p>
+
+	</article>
+
+	<article id="buttonArticle">
+		<h2>Stilsatt länk som knapp </h2>
+			<div id="linkButton"><a href="../2.1/index.html">Startsida</a></div>
+			<br />
+			<div id="linkButton2"><a href="#"><img src="buttonImg.png" alt="Bildlänk"></a></div>
+	</article>
+
+</body>
+</html>

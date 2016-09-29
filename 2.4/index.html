@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<link rel="stylesheet" type="text/css" href="../2.1/style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<title>Bilder och bakgrunder</title>
+</head>
+<body>
+<header>
+	<h1>Bilder och bakgrunder</h1>
+</header>
+	<article>
+		<h2>Background</h2>
+		<div class="beskrivning">
+		<p>Egenskapen <code>background</code> används för att sätta samtliga bakgrunds egenskaper i en och samma deklaration.</p>
+		<p>De egenskaper som går att sätta i samband med denna är följande.</p>
+		<ul>
+			<li><code>background-color</code></li>
+			<li><code>background-image</code></li>
+			<li><code>background-position</code></li>
+			<li><code>background-size</code></li>
+			<li><code>background-repeat</code></li>
+			<li><code>background-origin</code></li>
+			<li><code>background-clip</code></li>
+			<li><code>background-attachment</code></li>
+		</ul>
+		<p>Ifall man inte vill ha med någon av de egenskaperna som listas ovan så kan man bara hoppa över den och deklarera nästa istället.</p>
+		</div>
+
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><code>
+			div {
+				background: #00ff00 url("bgPic.png") no-repeat fixed center;
+			}
+
+
+		</code></p>
+		</div>
+
+	</article>
+
+
+	<article>
+		<h2>img och css</h2>
+		<div class="beskrivning" id="imgCss">
+			<img src="bgPic3.PNG" alt="Blade the man!!">
+			<p>För att kombinera bilder och text på ett snyggt sätt kan man i CSS använda sig av en egenskaper som heter <code>float</code> och <code>clear</code> tillsammans med HTML taggen <code>&lt;img&gt;</code> och övriga text taggar så som <code>&lt;p&gt;</code> eller headingtaggar. Float bestämmer om elementet ska vara "flytande" eller ej samt vilket håll det i så fall ska "flyta". Att ha ett "flytande" element innehär att elementet som kommer efter kommer att lägga sig brevid, antingen till höger eller vänster. Så om jag väljer att en <code>&lt;img&gt;</code> ska ha <code>float: left;</code> så kommer bilden att lägga sig till vänster på skärmen och den <code>&lt;p&gt;</code>-tagg som kommer efter kommer lägga sig brevid till höger. 
+			</p>
+			<h3>Clear</h3>
+			<p>Men för att kunna bestämma att element inte längre ska "flyta" på sidan om ett annat element längre så kan man använda sig av egenskapen <code>clear</code>. Denna egenskap berättar för webbläsaren att elementet inte ska flyta runt det andra elementet längre och lägger det istället nedanför i detta fall bilden.</p>
+		</div>
+		<div class="exempel">
+		<h3>Exempel</h3>
+		<p><strong><code>
+
+			#imgCss img {<br />
+				margin: 0 20px 10px 10px;<br />
+				float: left;<br />
+				
+			}<br /><br />
+
+			#imgCss h3{<br />
+				clear:left;<br />
+			}<br />
+		</code></strong></p>
+		</div>
+	</article>
+
+</body>
+</html>

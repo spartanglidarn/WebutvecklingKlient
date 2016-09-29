@@ -1,0 +1,13 @@
+#box {
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	-webkit-transition: width 2s;
+	-moz-transition: width 8s;
+	-ms-transition: width 16s;
+}
+
+#box:hover {
+	width: 600px;
+}

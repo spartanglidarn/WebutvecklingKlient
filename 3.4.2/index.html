@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="script.js"></script>
+
+
+<meta charset="UTF-8">
+
+<title>Bildhantering</title>
+</head>
+<body>
+<div id="container">
+	<h1>Bildhantering</h1>
+	<p>Klicka på knappen nedan för att ändra bilden</p>
+	<button id="picButton">Byt bild</button><br>
+	<img id="jqueryPic" src="rock.png" alt="jqueryPic" width="100">
+
+	<p>Bilden nedan har en rollover effekt</p>
+	<img src="img1.png" onmouseover="this.src='img2.png'" onmouseout="this.src='img1.png'"/>
+
+	<p>Nedan kommer ett canvas element</p>
+	<canvas id="testCanvas" class="canvasClass"></canvas>
+
+	<p>Nedan kommer canvas element nr 2</p>
+	<canvas id="testCanvasTwo" class="canvasClass"></canvas>
+
+	<p>Nedan kommer canvas element nr 3</p>
+	<img id="theImg" src="img2.PNG" width="150" alt="CoolPic"><br>
+	<canvas id="testCanvasThree" class="canvasClass"></canvas>
+
+	<br>
+	<a id="downloadLnk" download="canvasPic.jpg">Ladda ner canvas som bild</a>
+
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+
+#leftCol {
+	float: none;
+	width: auto;
+	margin: 0px;
+}
+
+#centerCol {
+	float: none;
+	width: auto;
+	margin: 10px 0px 0px 5px;
+}
+
+#rightCol {
+	float: none;
+	width: auto;
+	margin: 0px;
+}

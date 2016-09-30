@@ -1,21 +1,43 @@
 var playerOne = "rock";
 var playerTwo = "rock";
+var playerOneImg = "";
+var playerTwoImg = "";
+
+var computerNr = 0;
+console.log(computerNr);
+
+
 
 $(document).ready(function(){
 	$("#rock").click(function(){
 		playerOne = "rock";
+		playerOneImg = "rock.png"
 	});
 	$("#paper").click(function(){
 		playerOne = "paper";
+		playerOneImg = "paper.png"
 	});
 	$("#scissor").click(function(){
 		playerOne = "scissor";
+		playerOneImg = "scissor.png"
 	});	
 
+
 	$(".wepon").click(function(){
+		computerNr = Math.random();
+
+		if (computerNr < 0.33) {
+			playerTwo = "rock";
+			playerTwoImg = "rock.png"
+		} else if (computerNr < 0.66){
+			playerTwo = "paper";
+			playerTwoImg = "paper.png"
+		} else {
+			playerTwo = "scissor";
+			playerTwoImg = "scissor.png"
+		}
 		if (playerOne == "rock") {
 			rockFunction(playerTwo);
-
 		} else if (playerOne == "paper") {
 			paperFunction(playerTwo);
 
@@ -25,6 +47,21 @@ $(document).ready(function(){
 			result = "No wepon chosen by player one";
 		};
 		
+
+		$("#playerChoice").css("display", "inline").attr("src", playerOneImg);
+		$("#computerChoice").css("display", "inline").attr("src", playerTwoImg);
+
+		if (result =="Win") {
+			$(playerResult).text("Winner");
+			$(computerResult).text("Loser");
+		} else if (result == "Lose") {
+			$(playerResult).text("Loser");
+			$(computerResult).text("Winner");			
+		} else {
+			$(playerResult).text("Draw");
+			$(computerResult).text("Draw");			
+		};
+
 		console.log(result);
 		});
 
